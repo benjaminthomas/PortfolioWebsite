@@ -8,8 +8,6 @@ import ContactFormEmail from "@/email/contactemail";
 const apiKey = process.env.RESEND_API_KEY;
 const resend = new Resend(apiKey);
 
-console.log(apiKey)
-
 
 
 export const sendEmail = async (fromData: FormData) => {
