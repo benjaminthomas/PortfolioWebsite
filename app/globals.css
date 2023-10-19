@@ -9,3 +9,7 @@ html {
 .border-black {
     @apply border border-black/10;
 }
+
+.auto-flow-col {
+    grid-auto-flow: column;
+}
