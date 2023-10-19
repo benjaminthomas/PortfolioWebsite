@@ -16,7 +16,6 @@ export default function Testimonial() {
     const variants = {
         enter: {
             opacity: 1,
-            y: '-50%',
             x: 0,
             transition: {
                 delay: 0.2,
@@ -24,7 +23,6 @@ export default function Testimonial() {
         },
         exit: {
             opacity: 0,
-            y: '-50%',
             x: -100,
         },
     };
@@ -42,14 +40,14 @@ export default function Testimonial() {
             <SectionHeading>
                 Testimonials
             </SectionHeading>
-            <div className='relative w-[50rem] h-[30rem] bg-white rounded-xl px-5 py-3 dark:bg-white/5'>
-                <button onClick={prev} className='absolute -left-16 top-[50%] -translate-y-[50%] cursor-pointer z-10 bg-white text-gray-950 p-4 flex items-center justify-center gap-2 rounded-full border-black outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/60'>
+            <div className='relative p-8'>
+                <button onClick={prev} className='absolute left-0 top-[50%] -translate-y-[50%] cursor-pointer z-10 bg-white text-gray-950 p-4 flex items-center justify-center gap-2 rounded-full border-black outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/60'>
                     <FaArrowAltCircleLeft className='text-xl' />
                 </button>
-                <button onClick={next} className='absolute -right-16 top-[50%] -translate-y-[50%] cursor-pointer z-10 bg-white text-gray-950 p-4 flex items-center justify-center gap-2 rounded-full border-black outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/60'>
+                <button onClick={next} className='absolute right-0 top-[50%] -translate-y-[50%] cursor-pointer z-10 bg-white text-gray-950 p-4 flex items-center justify-center gap-2 rounded-full border-black outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/60'>
                     <FaArrowAltCircleRight className='text-xl' />
                 </button>
-                <ul className='flex flex-col justify-center gap-4 text-l text-gray-800'>
+                <ul className='grid auto-cols-[100%] auto-flow-col text-l text-gray-800 overflow-hidden'>
                     <AnimatePresence initial={false} custom={index}>
                         <motion.li
                             key={index}
@@ -58,7 +56,7 @@ export default function Testimonial() {
                             initial='exit'
                             animate='enter'
                             exit='exit'
-                            className='absolute left-0 top-[50%] -translate-y-[50%]'
+                            className='bg-white rounded-xl px-5 py-3 dark:bg-white/5 flex-1'
                         >
                             <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
                                 <figure className="max-w-screen-md mx-auto">

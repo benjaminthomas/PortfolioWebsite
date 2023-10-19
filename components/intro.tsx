@@ -20,7 +20,7 @@ export default function Intro() {
 
     return (
         <section ref={ref} id='home' className='relative mb-28 max-w-6xl text-center sm:mb-0 mx-auto scroll-mt-[100rem]'>
-            <div className='flex items-center flex-col-reverse sm:flex-row'>
+            <div className='flex items-center flex-col gap-10 sm:flex-row'>
                 <div className='flex-1 text-left'>
                     <motion.h1 
                         initial={{opacity: 0, y: 100}}
@@ -62,9 +62,9 @@ export default function Intro() {
                                 type: "spring",
                                 duration: 0.2
                             }}
-                            className='w-full  md:w-[400px] md:h-[550px]'
+                            className='w-full p-6 pb-0 md:p-0 md:w-[400px] md:h-[550px] bg-white/60 dark:bg-black/20 rounded-xl'
                         >
-                            <Image src={profilePic} alt='Benjamin Headshot' width="285" height="493" quality="95" priority={true} className='object-contain absolute bottom-0 left-[50%] -translate-x-[50%] max-w-[100%]' />
+                            <Image src={profilePic} alt='Benjamin' width="285" height="493" quality="95" priority={true} className='object-contain md:absolute bottom-0 left-[50%] md:-translate-x-[50%] max-w-[100%]' />
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0 }}
