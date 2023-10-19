@@ -7,6 +7,8 @@ import steerWorkplace from "@/public/works/steer-workplace.jpg";
 import steer73 from "@/public/works/steer73.jpg";
 import teleport from "@/public/works/teleport.jpg";
 import yoco from "@/public/works/yocoboard.jpg";
+import portfolioWebsite from "@/public/works/3d-portfolio.jpg";
+import adrieluxe from "@/public/works/adrieluxe.jpg";
 
 import aro from "@/public/company/aro.jpeg";
 import steer from "@/public/company/steer.jpeg";
@@ -326,6 +328,68 @@ export const projectsData = [
     ],
     image: yoco,
     source_code_link: "https://www.yocoboard.com/",
+  },
+  {
+    name: "3d Portfolio",
+    description:
+      "Self-guided project: Learned React, Vite, and Three.js through a YouTube tutorial. Enhanced web development skills by setting up environments, mastering React, and creating 3D experiences.",
+    tags: [
+      {
+        name: "HTML",
+        color: "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300",
+      },
+      {
+        name: "TailwindCSS",
+        color: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
+      },
+      {
+        name: "REACT",
+        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+      },
+      {
+        name: "Vitejs",
+        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+      },
+      {
+        name: "Threejs",
+        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+      },
+      {
+        name: "Framer motion",
+        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+      },
+    ],
+    image: portfolioWebsite,
+    source_code_link: "https://3dportfolio-plum.vercel.app/",
+  },
+  {
+    name: "Adrieluxe Decor",
+    description:
+      "End-to-end project with Adrieluxe Decor: Designed and developed their website using Figma, HTML, SCSS, Tailwind CSS, JavaScript, and MVC. Managed website hosting services. Additionally, created the logo from scratch for a complete solution.",
+    tags: [
+      {
+        name: "HTML",
+        color: "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300",
+      },
+      {
+        name: "TailwindCSS",
+        color: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
+      },
+      {
+        name: "MVC",
+        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+      },
+      {
+        name: "Figma",
+        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+      },
+      {
+        name: "Javascript",
+        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+      }
+    ],
+    image: adrieluxe,
+    source_code_link: "https://www.adrieluxe.com/",
   },
 ] as const;
 
