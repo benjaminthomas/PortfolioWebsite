@@ -64,7 +64,7 @@ export default function Intro() {
                             }}
                             className='w-full  md:w-[400px] md:h-[550px]'
                         >
-                            <Image src={profilePic} alt='Benjamin Headshot' width="285" height="493" quality="95" priority={true} className='object-contain shadow-xl absolute bottom-0 left-[50%] -translate-x-[50%] max-w-[100%]' />
+                            <Image src={profilePic} alt='Benjamin Headshot' width="285" height="493" quality="95" priority={true} className='object-contain absolute bottom-0 left-[50%] -translate-x-[50%] max-w-[100%]' />
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0 }}
