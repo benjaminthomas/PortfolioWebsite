@@ -39,7 +39,7 @@ export default function Project({
                     <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70'>{description}</p>
                     <ul className='flex flex-wrap items-center gap-1 mt-4 sm:mt-auto sm:pt-4'>
                         {tags.map((tag, index) =>(
-                            <li className={`px-3 py-1 text-[0.7rem] uppercase tracking-wider rounded-full bg-black/[0.7] text-white dark:text-white/70`} key={index}>#{tag.name}
+                            <li className={`px-3 py-1 text-[0.7rem] uppercase tracking-wider rounded-full bg-black/[0.7] text-white dark:text-white/90`} key={index}>#{tag.name}
                             </li>
                         ))}
                     </ul>
@@ -48,7 +48,7 @@ export default function Project({
                     className='absolute hidden sm:block bottom-0 right-0 w-[18rem] h-[85%] object-cover rounded-t-lg shadow-2xl group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:scale-[1.05] group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 transition group-even:right-[initial] group-even:left-0'
                     src={image} alt={name} quality={95} width="300" height="350" />
                 <div className='absolute inset-0 w-full h-full z-10 bg-black/50 flex items-center justify-center opacity-0 group-hover/section:opacity-100'>
-                    <Link href={source_code_link} target='_blank' className='bg-white w-[3rem] h-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 text-xl'>
+                    <Link aria-label='View project' href={source_code_link} target='_blank' className='bg-white w-[3rem] h-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 text-xl'>
                             <FaEye />
                     </Link>
                 </div>

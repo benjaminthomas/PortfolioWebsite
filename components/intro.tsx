@@ -64,7 +64,7 @@ export default function Intro() {
                             }}
                             className='w-full p-6 pb-0 md:p-0 md:w-[400px] md:h-[550px] bg-white/60 dark:bg-black/20 rounded-xl'
                         >
-                            <Image src={profilePic} alt='Benjamin' width="285" height="493" quality="95" priority={true} className='object-contain md:absolute bottom-0 left-[50%] md:-translate-x-[50%] max-w-[100%]' />
+                            <Image fetchPriority='high' src={profilePic} alt='Benjamin' width="285" height="493" quality="95" priority={true} className='object-contain md:absolute bottom-0 left-[50%] md:-translate-x-[50%] max-w-[100%]' />
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0 }}
@@ -76,13 +76,13 @@ export default function Intro() {
                                 duration: 0.7
                             }}
                             className='flex items-center gap-2 absolute bg-white/80 p-4 bottom-0 left-0 right-0 justify-center dark:bg-gray-950/80'>
-                            <a href='https://www.linkedin.com/in/benjamin-b-20802a97/' target='_blank' className='bg-white text-gray-950 p-4 flex items-center justify-center gap-2 rounded-full border-black outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/60'>
+                            <a aria-label='linkedin' href='https://www.linkedin.com/in/benjamin-b-20802a97/' target='_blank' className='bg-white text-gray-950 p-4 flex items-center justify-center gap-2 rounded-full border-black outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/60'>
                                 <BsLinkedin /> 
                             </a>
-                            <a href='https://github.com/benjaminthomas' target='_blank' className='bg-white text-gray-950 p-4 flex items-center justify-center gap-2 rounded-full border-black outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/60'>
+                            <a aria-label='github' href='https://github.com/benjaminthomas' target='_blank' className='bg-white text-gray-950 p-4 flex items-center justify-center gap-2 rounded-full border-black outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/60'>
                                 <BsGithub /> 
                             </a>
-                            <a href='https://medium.com/@b-benjithomas' target='_blank' className='bg-white text-gray-950 p-4 flex items-center justify-center gap-2 rounded-full border-black outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/60'>
+                            <a aria-label='Medium' href='https://medium.com/@b-benjithomas' target='_blank' className='bg-white text-gray-950 p-4 flex items-center justify-center gap-2 rounded-full border-black outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10 dark:text-white/60'>
                                 <BsMedium /> 
                             </a>
                         </motion.div>

@@ -41,10 +41,10 @@ export default function Testimonial() {
                 Testimonials
             </SectionHeading>
             <div className='relative py-4 px-8 bg-white rounded-xl dark:bg-white/5'>
-                <button onClick={prev} className='absolute left-5 top-[50%] -translate-y-[50%] cursor-pointer z-10 bg-white text-gray-950 p-4 flex items-center justify-center gap-2 rounded-full border-black outline-none focus:scale-110 hover:scale-110 active:scale-105 dark:bg-white/10 dark:text-white/60 transition-all'>
+                <button aria-label='Previous slide' onClick={prev} className='absolute left-5 top-[50%] -translate-y-[50%] cursor-pointer z-10 bg-white text-gray-950 p-4 flex items-center justify-center gap-2 rounded-full border-black outline-none focus:scale-110 hover:scale-110 active:scale-105 dark:bg-white/10 dark:text-white/60 transition-all'>
                     <FaArrowAltCircleLeft className='text-xl' />
                 </button>
-                <button onClick={next} className='absolute right-5 top-[50%] -translate-y-[50%] cursor-pointer z-10 bg-white text-gray-950 p-4 flex items-center justify-center gap-2 rounded-full border-black outline-none focus:scale-110 hover:scale-110 active:scale-105 dark:bg-white/10 dark:text-white/60 transition-all'>
+                <button aria-label='Next slide' onClick={next} className='absolute right-5 top-[50%] -translate-y-[50%] cursor-pointer z-10 bg-white text-gray-950 p-4 flex items-center justify-center gap-2 rounded-full border-black outline-none focus:scale-110 hover:scale-110 active:scale-105 dark:bg-white/10 dark:text-white/60 transition-all'>
                     <FaArrowAltCircleRight className='text-xl' />
                 </button>
                 <ul className='grid auto-cols-[100%] auto-flow-col text-l text-gray-800 overflow-hidden'>
