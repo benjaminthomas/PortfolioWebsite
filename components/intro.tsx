@@ -92,7 +92,7 @@ export default function Intro() {
             
             
             <div className="w-full justify-center items-center my-24 hidden sm:flex">
-                <Link href="#about">
+                <Link href="#about" aria-label='Scroll to about'>
                     <motion.div 
                         initial={{opacity: 0, y: 100}}
                         animate={{opacity: 1, y: 0}}
