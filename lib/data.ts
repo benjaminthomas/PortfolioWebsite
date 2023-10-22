@@ -9,6 +9,7 @@ import teleport from "@/public/works/teleport.jpg";
 import yoco from "@/public/works/yocoboard.jpg";
 import portfolioWebsite from "@/public/works/3d-portfolio.jpg";
 import adrieluxe from "@/public/works/adrieluxe.jpg";
+import meta from "@/public/works/meta.jpg";
 
 import aro from "@/public/company/aro.jpeg";
 import steer from "@/public/company/steer.jpeg";
@@ -40,13 +41,12 @@ export const links = [
   },
   {
     name: "Testimonial",
-    hash: "#testimonial"
+    hash: "#testimonial",
   },
   {
     name: "Contact",
     hash: "#contact",
   },
-  
 ] as const;
 
 export const experiencesData = [
@@ -62,7 +62,7 @@ export const experiencesData = [
       "Responsible for creating visually appealing and interactive elements on websites and apps.",
       "Specializes in color scheme selection, typography, and crafting intuitive user experiences.",
       "Designs responsive and mobile-friendly websites and applications.",
-      "Collaborates closely with designers, backend developers, and other stakeholders for seamless frontend-backend integration."
+      "Collaborates closely with designers, backend developers, and other stakeholders for seamless frontend-backend integration.",
     ],
   },
   {
@@ -159,7 +159,7 @@ export const projectsData = [
         color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
       },
     ],
-    image: 'https://picsum.photos/200/300/?blur=2',
+    image: "https://picsum.photos/200/300/?blur=2",
     source_code_link: "https://chubbfs.com/uk-en/",
   },
   {
@@ -202,11 +202,13 @@ export const projectsData = [
       },
       {
         name: "Design System",
-        color: "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300",
+        color:
+          "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300",
       },
       {
         name: "Kentico",
-        color: "bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-300",
+        color:
+          "bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-300",
       },
     ],
     image: everymum,
@@ -227,14 +229,15 @@ export const projectsData = [
       },
       {
         name: "Figma",
-        color: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300",
+        color:
+          "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300",
       },
       {
         name: "JavaScript",
         color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
       },
     ],
-    image: 'https://picsum.photos/200/300/?blur=2',
+    image: "https://picsum.photos/200/300/?blur=2",
     source_code_link: "https://www.paddypower.com/",
   },
   {
@@ -252,14 +255,15 @@ export const projectsData = [
       },
       {
         name: "Figma",
-        color: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300",
+        color:
+          "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300",
       },
       {
         name: "JavaScript",
         color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
       },
     ],
-    image: 'https://picsum.photos/200/300/?blur=2',
+    image: "https://picsum.photos/200/300/?blur=2",
     source_code_link: "/",
   },
   {
@@ -277,7 +281,8 @@ export const projectsData = [
       },
       {
         name: "Sketch",
-        color: "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
+        color:
+          "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
       },
       {
         name: "JavaScript",
@@ -363,6 +368,35 @@ export const projectsData = [
     source_code_link: "https://3dportfolio-plum.vercel.app/",
   },
   {
+    name: "3d Portfolio",
+    description:
+      "I self-taught React and Next.js via a YouTube tutorial, updated the code with TypeScript, and created a responsive website with intricate animations and modern design principles using Framer Motion and Tailwind CSS.",
+    tags: [
+      {
+        name: "HTML",
+        color: "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300",
+      },
+      {
+        name: "TailwindCSS",
+        color: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
+      },
+      {
+        name: "REACT",
+        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+      },
+      {
+        name: "NextJs",
+        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+      },
+      {
+        name: "Framer motion",
+        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+      },
+    ],
+    image: meta,
+    source_code_link: "https://metaverse-puce-delta.vercel.app/",
+  },
+  {
     name: "Adrieluxe Decor",
     description:
       "End-to-end project with Adrieluxe Decor: Designed and developed their website using Figma, HTML, SCSS, Tailwind CSS, JavaScript, and MVC. Managed website hosting services. Additionally, created the logo from scratch for a complete solution.",
@@ -386,7 +420,7 @@ export const projectsData = [
       {
         name: "Javascript",
         color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
-      }
+      },
     ],
     image: adrieluxe,
     source_code_link: "https://www.adrieluxe.com/",
@@ -396,7 +430,7 @@ export const projectsData = [
 export const testimonials = [
   {
     testimonial:
-    "I've had the pleasure of working with Benjamin for almost 5 years. He consistently gives 100% effort to the team and played a significant role in ensuring on-time completion of assignments and helping the smooth delivery of projects. He brings the skill and knowledge needed to explain the issues thoroughly and formulate potential solutions quickly. He is extremely approachable and helpful to all his colleagues and friends. I would highly recommend Benjamin for any individual or organization.",
+      "I've had the pleasure of working with Benjamin for almost 5 years. He consistently gives 100% effort to the team and played a significant role in ensuring on-time completion of assignments and helping the smooth delivery of projects. He brings the skill and knowledge needed to explain the issues thoroughly and formulate potential solutions quickly. He is extremely approachable and helpful to all his colleagues and friends. I would highly recommend Benjamin for any individual or organization.",
     name: "Priyadarshni Kandaswamy",
     designation: "Demand Delivery Manager",
     company: "AstraZeneca",
@@ -431,6 +465,5 @@ export const skillsData = [
   "Figma",
   "Sketch",
   "Adobe XD",
-  "Premiere Pro"
-  
+  "Premiere Pro",
 ] as const;
