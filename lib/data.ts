@@ -366,7 +366,7 @@ export const projectsData = [
     source_code_link: "https://3dportfolio-plum.vercel.app/",
   },
   {
-    name: "3d Portfolio",
+    name: "A modern website",
     description:
       "I self-taught React and Next.js via a YouTube tutorial, updated the code with TypeScript, and created a responsive website with intricate animations and modern design principles using Framer Motion and Tailwind CSS.",
     tags: [
@@ -397,7 +397,7 @@ export const projectsData = [
   {
     name: "Adrieluxe Decor",
     description:
-      "End-to-end project with Adrieluxe Decor: Designed and developed their website using Figma, HTML, SCSS, Tailwind CSS, JavaScript, and MVC. Managed website hosting services. Additionally, created the logo from scratch for a complete solution.",
+      "Collaborated on a full project with Adrieluxe Decor: Designed their website using Figma, HTML, SCSS, and JavaScript, while managing hosting. Crafted a unique logo for a holistic solution.",
     tags: [
       {
         name: "HTML",
