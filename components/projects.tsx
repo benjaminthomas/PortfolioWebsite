@@ -4,7 +4,7 @@ import SectionHeading from "./section-heading";
 import Project from "./project";
 import { useSectionInView } from "@/lib/hooks";
 import { ProjectPropsImports } from "@/lib/types";
-import { getProjects } from "@/portfolio/sanity/sanity-utils";
+import { getProjects } from "@/portfolio/utils/sanity-utils";
 import React, { useEffect, useState } from "react";
 
 export default function Projects() {

@@ -1,18 +1,8 @@
 import {createClient, groq} from 'next-sanity'
-
-const projectId = 'dpkbonr3'
-const dataset = 'production'
-const apiVersion = '2023-01-01'
+import {clientConfig} from '../config/clientconfig'
 
 export async function getProjects() {
-  const client = createClient({
-    projectId,
-    dataset,
-    apiVersion,
-    useCdn: true,
-  })
-
-  return client.fetch(
+  return createClient(clientConfig).fetch(
     groq`*[_type == "project"]{
         _id,
         _type,
