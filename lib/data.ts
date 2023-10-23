@@ -1,4 +1,7 @@
 import React from "react";
+
+import { pillColors } from "@/styles";
+
 import { FaLocationArrow } from "react-icons/fa";
 import { FaHouseUser } from "react-icons/fa";
 import anywhereworks from "@/public/works/anywhereworks.jpg";
@@ -127,15 +130,15 @@ export const projectsData = [
     tags: [
       {
         name: "HTML",
-        color: "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300",
+        color: pillColors["pill-blue"],
       },
       {
         name: "SCSS",
-        color: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
+        color: pillColors["pill-gray"],
       },
       {
         name: "MVC",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-red"],
       },
     ],
     image: steerWorkplace,
@@ -148,15 +151,15 @@ export const projectsData = [
     tags: [
       {
         name: "HTML",
-        color: "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300",
+        color: pillColors["pill-sky"],
       },
       {
         name: "SCSS",
-        color: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
+        color: pillColors["pill-gray"],
       },
       {
         name: "JavaScript",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-red"],
       },
     ],
     image: "https://picsum.photos/200/300/?blur=2",
@@ -169,19 +172,19 @@ export const projectsData = [
     tags: [
       {
         name: "HTML",
-        color: "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300",
+        color: pillColors["pill-sky"],
       },
       {
         name: "CSS",
-        color: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
+        color: pillColors["pill-gray"],
       },
       {
         name: "Wordpress",
-        color: "bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300",
+        color: pillColors["pill-pink"],
       },
       {
         name: "Wordpress Plugins",
-        color: "bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300",
+        color: pillColors["pill-pink"],
       },
     ],
     image: steer73,
@@ -194,21 +197,19 @@ export const projectsData = [
     tags: [
       {
         name: "HTML",
-        color: "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300",
+        color: pillColors["pill-sky"],
       },
       {
         name: "SCSS",
-        color: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
+        color: pillColors["pill-gray"],
       },
       {
         name: "Design System",
-        color:
-          "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300",
+        color: pillColors["pill-purple"],
       },
       {
         name: "Kentico",
-        color:
-          "bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-300",
+        color: pillColors["pill-indigo"],
       },
     ],
     image: everymum,
@@ -221,20 +222,19 @@ export const projectsData = [
     tags: [
       {
         name: "HTML",
-        color: "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300",
+        color: pillColors["pill-sky"],
       },
       {
         name: "SCSS",
-        color: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
+        color: pillColors["pill-gray"],
       },
       {
         name: "Figma",
-        color:
-          "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300",
+        color: pillColors["pill-yellow"],
       },
       {
         name: "JavaScript",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-red"],
       },
     ],
     image: "https://picsum.photos/200/300/?blur=2",
@@ -247,20 +247,19 @@ export const projectsData = [
     tags: [
       {
         name: "HTML",
-        color: "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300",
+        color: pillColors["pill-sky"],
       },
       {
         name: "SCSS",
-        color: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
+        color: pillColors["pill-gray"],
       },
       {
         name: "Figma",
-        color:
-          "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300",
+        color: pillColors["pill-yellow"],
       },
       {
         name: "JavaScript",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-red"],
       },
     ],
     image: "https://picsum.photos/200/300/?blur=2",
@@ -273,20 +272,19 @@ export const projectsData = [
     tags: [
       {
         name: "HTML",
-        color: "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300",
+        color: pillColors["pill-sky"],
       },
       {
         name: "SCSS",
-        color: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
+        color: pillColors["pill-gray"],
       },
       {
         name: "Sketch",
-        color:
-          "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
+        color: pillColors["pill-green"],
       },
       {
         name: "JavaScript",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-red"],
       },
     ],
     image: anywhereworks,
@@ -299,15 +297,15 @@ export const projectsData = [
     tags: [
       {
         name: "HTML",
-        color: "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300",
+        color: pillColors["pill-sky"],
       },
       {
         name: "SCSS",
-        color: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
+        color: pillColors["pill-gray"],
       },
       {
         name: "JavaScript",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-red"],
       },
     ],
     image: teleport,
@@ -320,15 +318,15 @@ export const projectsData = [
     tags: [
       {
         name: "HTML",
-        color: "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300",
+        color: pillColors["pill-sky"],
       },
       {
         name: "SCSS",
-        color: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
+        color: pillColors["pill-gray"],
       },
       {
         name: "JavaScript",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-red"],
       },
     ],
     image: yoco,
@@ -341,27 +339,27 @@ export const projectsData = [
     tags: [
       {
         name: "HTML",
-        color: "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300",
+        color: pillColors["pill-sky"],
       },
       {
         name: "TailwindCSS",
-        color: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
+        color: pillColors["pill-gray"],
       },
       {
         name: "REACT",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-red"],
       },
       {
         name: "Vitejs",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-pink"],
       },
       {
         name: "Threejs",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-blue"],
       },
       {
         name: "Framer motion",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-indigo"],
       },
     ],
     image: portfolioWebsite,
@@ -374,23 +372,23 @@ export const projectsData = [
     tags: [
       {
         name: "HTML",
-        color: "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300",
+        color: pillColors["pill-sky"],
       },
       {
         name: "TailwindCSS",
-        color: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
+        color: pillColors["pill-gray"],
       },
       {
         name: "REACT",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-red"],
       },
       {
         name: "NextJs",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-pink"],
       },
       {
         name: "Framer motion",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-indigo"],
       },
     ],
     image: meta,
@@ -403,23 +401,23 @@ export const projectsData = [
     tags: [
       {
         name: "HTML",
-        color: "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-300",
+        color: pillColors["pill-sky"],
       },
       {
         name: "TailwindCSS",
-        color: "bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300",
+        color: pillColors["pill-gray"],
       },
       {
         name: "MVC",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-blue"],
       },
       {
         name: "Figma",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-pink"],
       },
       {
         name: "Javascript",
-        color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
+        color: pillColors["pill-red"],
       },
     ],
     image: adrieluxe,
