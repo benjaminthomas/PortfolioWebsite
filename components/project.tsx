@@ -2,20 +2,19 @@
 
 import React, { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
-import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { FaEye } from "react-icons/fa";
 import Link from "next/link";
-
-type ProjectProps = (typeof projectsData)[number];
+import { ProjectSanityProps } from "@/lib/types";
 
 export default function Project({
-  name,
+  title,
   description,
-  tags,
+  tag,
   image,
-  source_code_link,
-}: ProjectProps) {
+  link,
+  imageAlt,
+}: ProjectSanityProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -35,17 +34,17 @@ export default function Project({
     >
       <section className="group/section relative bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 sm:h-[100%] even:pl-8 hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20 dark:text-white">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{name}</h3>
+          <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
           <ul className="flex flex-wrap items-center gap-1 mt-4 sm:mt-auto sm:pt-4">
-            {tags.map((tag, index) => (
+            {tag.map((value, index) => (
               <li
-                className={`px-3 py-1 text-[0.7rem] uppercase tracking-wider rounded-full ${tag.color}`}
+                className={`px-3 py-1 text-[0.7rem] uppercase tracking-wider rounded-full`}
                 key={index}
               >
-                #{tag.name}
+                #{value}
               </li>
             ))}
           </ul>
@@ -53,7 +52,7 @@ export default function Project({
         <Image
           className="absolute hidden sm:block bottom-0 right-0 w-[18rem] h-[85%] object-cover rounded-t-lg shadow-2xl group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:scale-[1.05] group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 transition group-even:right-[initial] group-even:left-0"
           src={image}
-          alt={name}
+          alt={imageAlt}
           quality={95}
           width="300"
           height="350"
@@ -61,7 +60,7 @@ export default function Project({
         <div className="absolute inset-0 w-full h-full z-10 bg-black/50 flex items-center justify-center opacity-0 group-hover/section:opacity-100">
           <Link
             aria-label="View project"
-            href={source_code_link}
+            href={link}
             target="_blank"
             className="bg-white w-[3rem] h-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 text-xl"
           >
