@@ -1,16 +1,21 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useMemo, useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
 import Image from "next/image";
 import { FaEye } from "react-icons/fa";
 import Link from "next/link";
 import { ProjectSanityProps } from "@/lib/types";
+import { tagClassMap } from "@/lib/data";
+
+type ClassMapProp = {
+  [key: string]: string;
+};
 
 export default function Project({
   title,
   description,
-  tag,
+  tags,
   image,
   link,
   imageAlt,
@@ -22,6 +27,8 @@ export default function Project({
   });
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+  const memoizedTagClassMap = useMemo(() => tagClassMap, []);
 
   return (
     <motion.div
@@ -39,14 +46,21 @@ export default function Project({
             {description}
           </p>
           <ul className="flex flex-wrap items-center gap-1 mt-4 sm:mt-auto sm:pt-4">
-            {tag.map((value, index) => (
-              <li
-                className={`px-3 py-1 text-[0.7rem] uppercase tracking-wider rounded-full`}
-                key={index}
-              >
-                #{value}
-              </li>
-            ))}
+            {tags.map((value, index) => {
+              const valueWithoutSpace = value.trim().toLowerCase();
+
+              return (
+                <li
+                  className={`px-3 py-1 text-[0.7rem] uppercase tracking-wider rounded-full ${
+                    (memoizedTagClassMap as ClassMapProp)[valueWithoutSpace] ||
+                    ""
+                  }`}
+                  key={index}
+                >
+                  <div id={value}>#{value}</div>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <Image

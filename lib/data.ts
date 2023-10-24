@@ -465,3 +465,22 @@ export const skillsData = [
   "Adobe XD",
   "Premiere Pro",
 ] as const;
+
+export const tagClassMap = {
+  html: pillColors["pill-sky"],
+  scss: pillColors["pill-emerald"],
+  mvc: pillColors["pill-red"],
+  javascript: pillColors["pill-pink"],
+  wordpress: pillColors["pill-purple"],
+  designsystem: pillColors["pill-indigo"],
+  kentico: pillColors["pill-yellow"],
+  figma: pillColors["pill-green"],
+  sketch: pillColors["pill-blue"],
+  tailwindcss: pillColors["pill-teal"],
+  react: pillColors["pill-orange"],
+  vitejs: pillColors["pill-lime"],
+  threejs: pillColors["pill-cyan"],
+  framermotion: pillColors["pill-violet"],
+  nextjs: pillColors["pill-amber"],
+  sanitystudio: pillColors["pill-emerald"],
+} as const;

@@ -7,7 +7,7 @@ export type ProjectSanityProps = {
   _type: "project";
   title: string;
   description: string;
-  tag: string[];
+  tags: string[];
   link: string;
   image: string;
   imageAlt: string;

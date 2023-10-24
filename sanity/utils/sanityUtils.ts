@@ -8,7 +8,7 @@ export async function getProjects() {
         _type,
         title,
         description,
-        tag,
+        'tags': tags[],
         link,
         'image': image.asset->url,
         'imageAlt': image.alt,
