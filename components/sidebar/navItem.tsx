@@ -1,8 +1,10 @@
+import React from "react";
 import { menuLiAnimation } from "@/app/utils/motion";
+import { clsx } from "clsx";
 import { links } from "@/lib/data";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import React from "react";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 type NavItemProps = (typeof links)[number] & {
   index: number;
@@ -19,19 +21,41 @@ export default function NavItems({
   open,
   setOpen,
 }: NavItemProps) {
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
   return (
     <motion.li
       variants={menuLiAnimation(index, totalItems)}
       animate={open ? "animate" : "exit"}
       onClick={() => setOpen((prevOpen) => !prevOpen)}
-      className="text-center text-2xl"
+      className="relative text-center text-2xl"
     >
       <Link
         href={hash}
-        className={`${open ? "" : "pointer-events-none"}`}
+        className={clsx(
+          "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:hover:text-gray-300",
+          {
+            "text-gray-950 dark:text-gray-200": activeSection === name,
+          }
+        )}
+        onClick={() => {
+          setActiveSection(name);
+          setTimeOfLastClick(Date.now());
+        }}
         aria-label={name}
       >
         {name}
+        {name === activeSection && (
+          <motion.span
+            className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
+            layoutId="activeSection"
+            transition={{
+              type: "spring",
+              stiffness: 380,
+              damping: 30,
+            }}
+          ></motion.span>
+        )}
       </Link>
     </motion.li>
   );

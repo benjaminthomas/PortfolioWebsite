@@ -7,7 +7,7 @@ import ToggleButton from "./toggleButton";
 import { menuVariants } from "@/app/utils/motion";
 import NavItems from "./navItem";
 
-export default function Navbar() {
+export default function Sidebar() {
   const [open, setOpen] = useState(false);
   const totalItems = links.length;
   return (

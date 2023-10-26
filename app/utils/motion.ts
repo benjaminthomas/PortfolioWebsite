@@ -1,6 +1,6 @@
 export const menuVariants = {
   open: {
-    clipPath: "circle(1000px at 224px 65px)",
+    clipPath: "circle(1000px at 267px 45px)",
     transition: {
       type: "spring",
       stiffness: 20,
@@ -8,7 +8,7 @@ export const menuVariants = {
     },
   },
   closed: {
-    clipPath: "circle(30px at 243px 45px)",
+    clipPath: "circle(30px at 267px 45px)",
     transition: {
       type: "spring",
       stiffness: 400,
