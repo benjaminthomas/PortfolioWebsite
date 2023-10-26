@@ -11,7 +11,6 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 export default function Testimonial() {
   const { ref } = useSectionInView("Testimonial", 0.5);
   const [index, setIndex] = useState(0);
-  const [direction, setDirection] = useState(1);
 
   const variants = {
     enter: {

@@ -1,6 +1,5 @@
 export const menuVariants = {
   open: {
-    opacity: 1,
     clipPath: "circle(1000px at 224px 65px)",
     transition: {
       type: "spring",
@@ -9,8 +8,7 @@ export const menuVariants = {
     },
   },
   closed: {
-    opacity: 0,
-    clipPath: "circle(30px at 224px 65px)",
+    clipPath: "circle(30px at 243px 45px)",
     transition: {
       type: "spring",
       stiffness: 400,
@@ -21,24 +19,27 @@ export const menuVariants = {
   },
 };
 
-export const menuLiAnimation = (index: number) => ({
-  initial: {
-    type: "spring",
-    x: 100,
-    opacity: 0,
-    scale: 0.5,
-    transition: {
-      delay: index * 0.2,
-    },
-  },
+export const menuLiAnimation = (index: number, totalItems: number) => ({
   animate: {
-    type: "spring",
     x: 0,
     opacity: 1,
     scale: 1,
     stiffness: 300,
     transition: {
-      delay: 1 + index * 0.2,
+      type: "spring",
+      stiffness: 300,
+      damping: 40,
+      delay: 0.5 + index * 0.2,
+    },
+  },
+  exit: {
+    x: 100,
+    opacity: 0,
+    scale: 0.5,
+    transition: {
+      type: "spring",
+      delay: (totalItems - index - 1) * 0.2,
+      duration: 0.2,
     },
   },
 });

@@ -11,7 +11,7 @@ export default function ToggleButton({ setOpen }: ToggleButtonProps) {
       type="button"
       aria-label="Toggle Menu"
       onClick={() => setOpen((prev) => !prev)}
-      className="flex flex-col justify-center items-center gap-1 w-[50px] h-[50px] bg-white border-black rounded-full text-gray-950 cursor-pointer text-center dark:bg-white/10 dark:text-white/80"
+      className="flex flex-col justify-center items-center gap-1 w-[50px] h-[50px] border-black rounded-full cursor-pointer text-center bg-white dark:bg-gray-950/80 text-gray-950 dark:text-white/80"
     >
       <svg width="30" height="16" viewBox="0 0 30 16">
         <motion.rect

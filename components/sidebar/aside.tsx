@@ -1,14 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
 import { links } from "@/lib/data";
 import { motion } from "framer-motion";
 import ToggleButton from "./toggleButton";
-import { menuLiAnimation, menuVariants } from "@/app/utils/motion";
+import { menuVariants } from "@/app/utils/motion";
+import NavItems from "./navItem";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const totalItems = links.length;
   return (
     <>
       <motion.aside
@@ -34,16 +35,15 @@ export default function Navbar() {
         >
           <ul className={`flex flex-col justify-center h-[inherit] gap-10`}>
             {links.map((link, index) => (
-              <motion.li
-                variants={menuLiAnimation(index)}
-                initial="initial"
-                animate={open ? "animate" : "initial"}
-                key={link.hash}
-                onClick={() => setOpen((prevOpen) => !prevOpen)}
-                className="text-center text-2xl"
-              >
-                <Link href={link.hash}>{link.name}</Link>
-              </motion.li>
+              <React.Fragment key={link.hash}>
+                <NavItems
+                  {...link}
+                  open={open}
+                  totalItems={totalItems}
+                  setOpen={setOpen}
+                  index={index}
+                />
+              </React.Fragment>
             ))}
           </ul>
         </motion.nav>
