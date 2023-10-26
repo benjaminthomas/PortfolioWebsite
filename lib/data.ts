@@ -427,6 +427,7 @@ export const projectsData = [
 
 export const testimonials = [
   {
+    id: 1,
     testimonial:
       "I've had the pleasure of working with Benjamin for almost 5 years. He consistently gives 100% effort to the team and played a significant role in ensuring on-time completion of assignments and helping the smooth delivery of projects. He brings the skill and knowledge needed to explain the issues thoroughly and formulate potential solutions quickly. He is extremely approachable and helpful to all his colleagues and friends. I would highly recommend Benjamin for any individual or organization.",
     name: "Priyadarshni Kandaswamy",
@@ -435,6 +436,7 @@ export const testimonials = [
     image: priya,
   },
   {
+    id: 2,
     testimonial:
       "Mr. Benjamin is a fantastic professional who brings all of his skills and expertise in Front End Development. It was indeed a pleasure working with such senior personnel at the office. I gained various skills from him that helped me in every aspect. I worked with Benjamin for almost three years but on a different team still, there are some dependents on his team. Whenever I reached him with doubt, he always made me feel welcome and asked for my opinions and matters on various issues. He was the most reliable person to contact.",
     name: "Ashokkumar Giri Mohan",

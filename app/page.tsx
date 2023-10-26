@@ -4,7 +4,7 @@ import Experience from "@/components/experience";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
-import Testimonial from "@/components/testimonial";
+import Testimonial from "@/components/testimonials/testimonial";
 
 export default function Home() {
   return (
@@ -17,5 +17,5 @@ export default function Home() {
       <Testimonial />
       <Contact />
     </main>
-  )
+  );
 }

@@ -43,3 +43,18 @@ export const menuLiAnimation = (index: number, totalItems: number) => ({
     },
   },
 });
+
+export const sliderAnimation = (direction: number) => ({
+  initial: {
+    x: direction > 0 ? 200 : -200,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+  },
+  exit: {
+    x: direction > 0 ? -200 : 200,
+    opacity: 0,
+  },
+});
