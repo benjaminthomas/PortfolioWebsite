@@ -13,6 +13,7 @@ import yoco from "@/public/works/yocoboard.jpg";
 import portfolioWebsite from "@/public/works/3d-portfolio.jpg";
 import adrieluxe from "@/public/works/adrieluxe.jpg";
 import meta from "@/public/works/meta.jpg";
+import gaming from "@/public/works/gaming.jpg";
 
 import aro from "@/public/company/aro.jpeg";
 import steer from "@/public/company/steer.jpeg";
@@ -366,6 +367,40 @@ export const projectsData = [
     source_code_link: "https://3dportfolio-plum.vercel.app/",
   },
   {
+    name: "Gaming website",
+    description:
+      "Built a gaming website for a side hustle using Next.js 14, React, and TypeScript. Implemented Framer Motion for captivating page animations and transitions.",
+    tags: [
+      {
+        name: "HTML",
+        color: pillColors["pill-sky"],
+      },
+      {
+        name: "TailwindCSS",
+        color: pillColors["pill-gray"],
+      },
+      {
+        name: "REACT",
+        color: pillColors["pill-red"],
+      },
+      {
+        name: "NextJs",
+        color: pillColors["pill-pink"],
+      },
+      {
+        name: "Framer motion",
+        color: pillColors["pill-indigo"],
+      },
+      {
+        name: "Typescript",
+        color: pillColors["pill-blue"],
+      },
+    ],
+    image: gaming,
+    source_code_link:
+      "https://gamingwebsite-32548xmy3-benjaminthomas-projects.vercel.app/",
+  },
+  {
     name: "A modern website",
     description:
       "I self-taught React and Next.js via a YouTube tutorial, updated the code with TypeScript, and created a responsive website with intricate animations and modern design principles using Framer Motion and Tailwind CSS.",
@@ -389,6 +424,10 @@ export const projectsData = [
       {
         name: "Framer motion",
         color: pillColors["pill-indigo"],
+      },
+      {
+        name: "Typescript",
+        color: pillColors["pill-blue"],
       },
     ],
     image: meta,
@@ -427,6 +466,7 @@ export const projectsData = [
 
 export const testimonials = [
   {
+    id: 1,
     testimonial:
       "I've had the pleasure of working with Benjamin for almost 5 years. He consistently gives 100% effort to the team and played a significant role in ensuring on-time completion of assignments and helping the smooth delivery of projects. He brings the skill and knowledge needed to explain the issues thoroughly and formulate potential solutions quickly. He is extremely approachable and helpful to all his colleagues and friends. I would highly recommend Benjamin for any individual or organization.",
     name: "Priyadarshni Kandaswamy",
@@ -435,6 +475,7 @@ export const testimonials = [
     image: priya,
   },
   {
+    id: 2,
     testimonial:
       "Mr. Benjamin is a fantastic professional who brings all of his skills and expertise in Front End Development. It was indeed a pleasure working with such senior personnel at the office. I gained various skills from him that helped me in every aspect. I worked with Benjamin for almost three years but on a different team still, there are some dependents on his team. Whenever I reached him with doubt, he always made me feel welcome and asked for my opinions and matters on various issues. He was the most reliable person to contact.",
     name: "Ashokkumar Giri Mohan",
